@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Code For All</title>
+
+    <!-- LINKS DAS FONTES USADAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    <!-- LINK DO CSS -->    
+    <link rel="stylesheet" href="css/style-autentica-adm.css">
+
+    <!-- JS DE VERIFICAÇÃO DA CHAVE -->
+    <script>
+        function validar_chave(){
+            var chave1 = document.getElementById('campo-chave1');
+            var chave2 = document.getElementById('campo-chave2');
+
+            var chaveMestra1 = chave1.value;
+            var chaveMestra2 = chave2.value;
+
+            if(chaveMestra1 == 111111 && chaveMestra2 ==222222){
+                return true;
+            }
+            else{
+                window.alert("AS CHAVES ESTÃO  INCORRETAS!!");
+                return false;
+            }
+        }
+        function avisoFeature(){
+            window.alert("Essa funcionalidade está disponível apenas para estudantes da Escola Dr Solon Tavares");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <!-- NAV -->
+        <nav>
+            <div class="nome-site">
+                Code For All
+            </div>
+            <div class="links-nav">
+                <a href="home-professor.php">HOME</a>
+                <a href="#" onclick="return avisoFeature()">DÚVIDAS</a>
+                <a href="contato-professor.php">CONTATO</a>
+                <a href="autentica-adm.html">ADMINISTAÇÃO</a>
+                <a href="sair.php">SAIR</a>
+            </div>
+        </nav>
+        <div class="aviso">
+            <p>
+                Esta área é destinada somente para administradores do site, se você não é um, por favor se retire.
+            </p>
+        </div>
+    </header>
+    <main>
+        <!-- CONTAINER DO FORMULÁRIO -->
+        <div class="container-form">
+            <h1>
+                Insira as chaves de acesso para acessar a administração
+            </h1>
+            <!-- FORMULÁRIO COM AÇÃO PARA PÁGINA DE CADASTRO -->
+            <form action="areaAdmin.php">
+                <br>
+                <label for="campo-chave1">Chave de acesso 1</label>
+                <br>
+                <input type="password" id="campo-chave1" placeholder="Insira a chave 1" maxlength="6" minlength="6" required>
+                <span></span> <!-- SPAN = ÍCONES DE ERRO/ACERTO -->
+                <br>
+                <label for="campo-chave2">Chave de acesso 2</label>
+                <br>
+                <input type="password" id="campo-chave2" placeholder="Insira a chave 2" maxlength="6" minlength="6" required>
+                <span></span> <!-- SPAN = ÍCONES DE ERRO/ACERTO -->
+                <br>
+                <!-- ATIVAÇÃO DA FUNÇÃO JS AO CLICLAR NO BOTÃO -->
+                <input type="submit" value="Verificar" class="botao" onclick="return validar_chave()">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <section class="copyright">
+            Copyright © 2021 Eduardo Garcia. Todos direitos reservados
+            <br>
+        </section>
+    </footer>
+</body>
+</html>

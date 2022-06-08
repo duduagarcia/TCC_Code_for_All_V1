@@ -1,0 +1,277 @@
+/*FORMATAÇÃO PADRÃO DA TELA*/
+*{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+/*ESTILO DA BARRA DE NAVEGAÇÃO*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    height: 90px;
+}
+
+.nome-site{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.links-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.links-nav a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.links-nav a:hover{
+    color: rgb(103,58,183);
+}
+
+.nomePHP{
+    background-color: rgb(30, 30, 30);
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nomePHP h1{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nomePHP h2{
+    margin-top: 20px;
+    color: white;
+}
+
+.nomePHP .container-titulo span{
+    color: rgb(103,58,183);
+    font-size: 50px;
+}
+
+.nomePHP .container-titulo{
+    width: 580px;
+    padding-top: 70px;
+}
+
+.container-titulo button{
+    width: 300px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 20px  0px 0px 0px;
+    padding: 5px;
+}
+
+.btn1{
+    background-color: rgb(103,58,183);
+    border: none;
+    transition: all 0.5s;
+}
+
+.btn1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.nomePHP .hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nomePHP .hello span{
+    color: white;
+    background-color: black;
+    font-size: 40px;
+    margin-top: -190px;
+    padding: 18px;
+}
+
+.mensagemPHP{
+    color: black;
+    background-color: white;
+    height: max-content;
+    width: 100%;
+}
+
+.mensagemPHP h2{
+    text-align: center;
+    font-size: 36px;
+}
+
+.container-assunto{
+    text-align: center;
+    font-size: 30px;
+}
+
+.dados-aluno{
+    text-align: center;
+    font-size: 30px;
+}
+
+.dados-aluno label{
+    position: relative;
+    left: -67px;
+}
+
+.dados-aluno input{
+    margin-right: -70px;
+}
+
+.container-mensagem{
+    text-align: center;
+    height: max-content;
+    font-size: 30px;
+}
+
+.container-mensagem{
+    text-align: center;
+    height: max-content;
+}
+
+.container-mensagem label{
+    font-size: 30px;
+    color: black;
+}
+
+/*FORMATAÇÃO DO PLACEHOLDER DOS INPUT:TEXT*/
+::-webkit-input-placeholder  {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.container-text-area{
+    text-align: center;
+    font-size: 30px;
+}
+
+.container-form{
+    align-items: center;
+}
+
+.inputText{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 380px;
+    height: 30px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: 2px solid rgb(103,58,183);
+}
+
+textarea{
+    background-color: rgb(60, 60, 60);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    resize: none;
+    border: 2px solid rgb(103,58,183);
+}
+
+.container-form{
+    align-items: center;
+}
+
+.inputText{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 380px;
+    height: 30px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: 2px solid rgb(103,58,183);
+}
+
+
+.container-btns{
+    text-align: center;
+}
+
+.btn-submit{
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: none;
+    color: white;
+    background-color: rgb(103,58,183);
+}
+
+
+
+.btn-submit:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+hr{
+    border-color: black;
+}
+
+.custom-shape-divider-bottom-1635601720 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -93px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1635601720 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 248px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1635601720 .shape-fill {
+    fill: #673AB7;
+}

@@ -1,0 +1,265 @@
+/*FORMATAÇÃO PADRÃO DA TELA*/
+*{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+/*ESTILO DA BARRA DE NAVEGAÇÃO*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    height: 90px;
+}
+
+.nome-site{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.links-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.links-nav a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.links-nav a:hover{
+    color: rgb(103,58,183);
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+}
+
+.aviso{
+    background-color: rgb(103,58,183);
+    text-align: center;
+    padding: 12px;
+    font-size: 26px;
+}
+
+.title-container h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 4px;
+    font-size: 40px;
+    color: rgb(103,58,183);
+    background-color: rgb(40, 40, 40);
+    width: max-content;
+    letter-spacing: 4px;
+    padding: 8px;
+}
+
+.title-container p{
+    font-size: 25px;
+    width: 690px;
+    letter-spacing: 2px;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    padding-top: 90px;
+}
+
+
+
+.btn-container span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 4px;
+    font-size: 40px;
+    color: rgb(103,58,183);
+}
+
+.btn-container label{
+    font-size: 25px;
+}
+
+.btn-container input{
+    width: 100px;
+    height: 20px;
+}
+
+.btn-container .btn-submit{
+    padding: 12px 0px 12px 0px;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 380px;
+    height: 60px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: none;
+    background-color: rgb(103,58,183);
+    color: white;
+}
+
+.btn-container .btn-submit:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.php-section{
+    background-color: rgb(30, 30, 30);
+    height: max-content;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 3px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.php-section h1{
+    color: rgb(103,58,183);
+}
+
+.container-form{
+    width: max-content;
+    height: min-content;
+    text-align: center;
+}
+
+.container-form a{
+    text-decoration: none;
+    color: rgb(103,58,183);
+}
+
+.label-nome{
+    margin-left: 50px;
+}
+
+.label-email{
+    margin-left: 70px;
+}
+
+.email{
+    margin-right: -90px;
+}
+
+.label-telefone{
+    margin-left: -30px;
+}
+
+.inputText{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    width: 380px;
+    height: 30px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-right: -60px;
+    border: none;
+}
+
+.campos-aluno input{
+    background-color: rgb(60, 60, 60);
+    color: white;
+    width: 380px;
+    height: 30px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: none;
+}
+
+/*FORMATAÇÃO DO PLACEHOLDER DOS INPUT:TEXT*/
+::-webkit-input-placeholder  {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+}
+
+textarea{
+    background-color: rgb(60, 60, 60);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    resize: none;
+    border: 2px solid rgb(103,58,183);
+}
+
+.btn{
+    padding: 12px 0px 12px 0px;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 300px;
+    height: 60px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: none;
+    color: white;
+    background-color: rgb(103,58,183);
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+/*ESTILO DO FOOTER*/
+.copyright{
+    margin: 0px 0px 0px 0px;
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+}
+
+.rdBtn1{
+    margin-left: 56px;
+}
+
+.rdBtn2{
+    margin-left: 150px;
+}
+
+.rdBtn3{
+    margin-left: 162px;
+}
+
+.rdBtn4{
+    margin-left: 16px;
+}

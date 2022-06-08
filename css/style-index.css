@@ -1,0 +1,240 @@
+/*FORMATAÇÃO PADRÃO DA TELA*/
+*{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+/*ESTILO DO CABEÇALHO*/
+.nome-site{
+    text-align: center;
+    padding: 18px 0px 18px 0px;
+    background-color: black;
+    font-size: 32px;
+    letter-spacing: 10px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+main{
+    display: flex;    
+}
+
+/*ESTILO DO CONTAINER DA IMAGEM*/
+.container-img{
+    width: 55%;
+    height: 850px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*ESTILO DO CONTAINER DO FORMULÁRIO*/
+.container-form{
+    width: 38%;
+    height: 850px;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 0px 55px;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    margin: 50px 0px 30px 0px;
+}
+
+label{
+    margin: 20px 0px 30px 0px;
+}
+
+/*ESTILO DOS INPUT:TEXT*/
+input{
+    background-color: rgb(40, 40, 40);
+    color: white;
+    width: 380px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: none;
+}
+
+
+
+/*FORMATAÇÃO DO PLACEHOLDER DOS INPUT:TEXT*/
+::-webkit-input-placeholder  {
+     font-size: 18px;
+     font-weight: bold;
+     font-style: italic;
+     font-family: 'Raleway', sans-serif;
+}
+
+/*ESTILO DOS SPANS COM SEUS ÍCONES SOBRE OS CAMPOS DE TEXTO*/
+span{
+    position: relative;
+}
+
+input:invalid + span::before{
+    content: '✖';
+    color: red;
+}
+
+input:valid + span::before{
+    content: '✓';
+    color: green;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0 ;
+    outline: 0;
+}
+
+.teste1{
+    margin-left: 8px;
+}
+
+.radioP{
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.radioA{
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+.professor{
+    font-size: 20px;
+}
+
+/*ESTILO DOS BOTÕES*/
+.botao-submit{
+    height: 60px;
+    padding: 12px 0px 12px 0px;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: rgb(103,58,183);
+    border: none;
+}
+
+/*ANIMAÇÕES DOS BOTÕES*/
+.botao-submit:hover , button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+button{
+    padding: 12px 0px 12px 0px;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 380px;
+    height: 60px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 0px 30px 0px 0px;
+    border: 1px solid black;
+}
+
+/*ESTILO DO FOOTER*/
+footer{
+    background-color: rgb(30, 30, 30);
+    height: 300px;
+    font-size: 30px;
+    color: white;
+}
+
+/*ESTILOS DA 1° E 2° SESSÃO SOBRE O SITE*/
+.sec1 , .sec2{
+    display: flex;
+}
+            
+.tittle-sec1 , .tittle-sec2{
+    width: 50%;
+    padding: 50px 0px 0px 90px;
+    color: rgb(103,58,183);
+    letter-spacing: 3px;
+}
+
+.text-sec1 , .text-sec2{
+    width: 38%;
+    padding: 30px 0px 0px 50px;
+    font-size: 20px;
+}
+
+            
+/*ESTILO DA PARTE DE COPYRIGHT*/
+.copyright{
+    margin: 70px 0px 0px 0px;
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+    background-color: black;
+    border-top: 2px solid rgb(103,58,183) ;
+}
+
+/*ESTILO DO GRADIENTE*/
+.gradiente{
+    margin-top: -1150px;
+    background-image:
+    linear-gradient(to bottom, rgba(60, 9, 108, 0.52), rgba(103, 58, 183, 0.73),blueviolet);
+    width: 55%;
+    height: 850px;
+    background-size: cover;
+    position: absolute;
+}
+
+.semConta{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.semConta:hover{
+    color: black;
+    border-bottom: 1px black solid;
+}
+
+.teste1{
+    margin-left: 8px;
+}
+
+.radioP{
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.radioA{
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+.professor{
+    font-size: 20px;
+}

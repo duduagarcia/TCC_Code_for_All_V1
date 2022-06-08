@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Capitulo 1</title>
+
+    <!-- LINKS DAS FONTES USADAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style-cap1.css">
+
+    <script>
+        function abrirMenu(){
+            const menu = document.querySelector('.toggle');
+            const sideBar = document.querySelector('.sideBar');
+            menu.classList.toggle('active');
+            sideBar.classList.toggle('active');
+        }
+    </script>
+
+</head>
+<body>
+    <div class="toggle" onclick="abrirMenu();"></div>   
+    <div class="sideBar">
+        <ul class="menu">
+            <li><a href="#parte1">1 - O QUE É A INFORMÁTICA</a></li>
+            <li><a href="#parte2">2 - HARDWARE E SOFTWARE</a></li>
+            <li><a href="#parte3">3 - O QUE FAZ UM TÉCNICO EM INFORMÁTICA</a></li>
+            <li><a href="#parte4">4 - AS LINGUAGENS DE PROGRAMAÇÃO</a></li>
+            <li><a href="#parte5">5 - TIPOS DE DESENVOLVEDORES</a></li>
+            <li><a href="#parte6">6 - VARIEDADE DE LINGUAGENS</a></li>
+            <li><a href="#parte7">7 - CONCLUSÃO</a></li>
+            <li><a href="home-professor.php">SAIR</a></li>
+        </ul>
+    </div>
+    <section class="parte1" id="parte1">
+        <div class="container-img">
+            <img src="img/card1.png" alt="">
+        </div>
+        <div class="container-conteudo">
+            <h1>Capítulo_1</h1>
+            <h2>O que é <span>INFORMÁTICA?</span></h2>
+            <p>Informática é a ciência que estuda as práticas de processamento, transmissão e armazenamento de dados por meios digitais. Possui a finalidade de <span>resolver problemas</span>, assim uma máquina é desenvolvida com o intuito de seguir uma série de instruções, chamadas de <span>algoritmos</span> para assim conseguir resolver o problema e, facilitar a vida das pessoas no dia a dia. </p>
+        </div>
+    </section>
+    <section class="parte2" id="parte2">
+        <div class="div-title">
+            <h2>Na Informática há dois termos essenciais</h2>
+        </div>
+        <div class="main-container">
+            <div class="container-hardware">
+                <h2>HARDWARE</h2>
+                <p>Se refere a parte física da informática, a parte que pode ser tocada, sendo equipamentos como: placas de vídeo, impressoras, notebooks, teclados, mouses etc.</p>
+                <div class="container-img">
+                    <img src="img/hardware.jpg" alt="">
+                </div>
+            </div>
+            <div class="container-software">
+                <h2>SOFTWARE</h2>
+                <p>Se refere a parte intangível da informática, os famosos programas de computadores, aplicativos de celulares e websites.</p>
+                <div class="container-img">
+                    <img src="img/software.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="parte3" id="parte3">
+        <div class="div-title">
+            <h2>Áreas de atuação de um técnico em <span>Informática</span></h2>
+            <br>
+            <p>"O faz Tudo"</p>
+        </div>
+        <div class="areas">
+            <ul>
+                <li>Montagem e manutenção de computadores</li>
+                <li>Detectar e corrigir problemas em computadores</li>
+                <li>Instalar e configurar redes e software</li>
+            </ul>
+            <ul>
+                <li>Desenvolver sistemas e websites</li>
+                <li>Organizar banco de dados</li>
+                <li>Planejar a construção de um sistema/software</li>
+            </ul>
+        </div>
+    </section>
+    <section class="parte4" id="parte4">
+        <div class="div-title">
+            <h2>Linguagens de programação</h2>
+            <br>
+            <p>"As ferramentas"</p>
+        </div>
+        <div class="container-conteudo">
+            <div class="conteudo1">
+                <p>
+                    Para se criar algo precisa-se de ferramentas certo? Pois bem, as ferramentas dos desenvolvedores para a criação de sistemas são as linguagens de programação. Linguagens de programação são um meio de contato entre computadores e os seres humanos, elas são com a “língua” que os computadores entendem
+                </p>
+            </div>
+            <div class="conteudo2">
+                <p>
+                    Existem dois tipos principais de linguagens de programação, as de alo nível e as de baixo nível. As de baixo nível são linguagens com sintaxe, ou seja o jeito de escrever, mais próximo ao da máquina (zeros ou um), sendo extremamente difíceis para interpretação humana. Do outro lado, sendo totalmente o oposto das linguagens de baixo nível, temos as linguagens de alto nível, que são mais próximas da linguagem humana e, portanto mais simples para compreensão.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="parte5" id="parte5">
+        <div class="container-img">
+            <img src="img/front end e back end.png" alt="">
+        </div>
+        <div class="container-conteudo">
+            <h1>Tipos de<span>_Desenvolvedores</span></h1>
+            <div class="dev1">
+                <h2>Desenvolvedor Front End</h2>
+                <p>É o desenvolvedor que cuida da interface do usuário, ou seja, a parte da frente do sistema, onde ficam os botões, campos de texto e etc...</p>
+            </div>
+            <div class="dev2">
+                <h2>Desenvolvedor Back End</h2>
+                <p>É o desenvolvedor que atua atrás das cortinas, é ele quem cuida de partes como autenticações, pagamentos e outras funcionalidades não visíveis para o usuário.</p>
+            </div>
+            <div class="dev3">
+                <h2>Desenvolvedor Full Stack</h2>
+                <p>Os desenvolvedores Full Stack possuem conhecimento sobre os dois tipos de desenvolvimento, portanto, são aqueles que podem atuar tanto no Back End como no Front End.</p>
+            </div>
+    </section>
+    <section class="parte6" id="parte6">
+        <div class="div-title">
+            <h2>Variedade de linguagens</h2>
+            <br>
+            <p>"Apenas alguns exemplos de muitos"</p>
+        </div>
+        <div class="container-conteudo">
+            <div class="conteudo1">
+                <div class="ling">
+                    <div class="container-img">
+                        <img src="img/logo c++.png" alt="">
+                    </div>
+                    <div class="nome1">
+                        <p>C++</p>
+                    </div>
+                </div>
+                <div class="ling">
+                    <div class="container-img">
+                        <img src="img/logo java.jpeg" alt="">
+                    </div>
+                    <div class="nome2">
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="ling">
+                    <div class="container-img">
+                        <img src="img/logo js.jpeg" alt="">
+                    </div>
+                    <div class="nome3">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            <div class="conteudo2">
+                <div class="ling">
+                    <div class="container-img">
+                        <img src="img/ruby logo.png" alt="">
+                    </div>
+                    <div class="nome4">
+                        <p>Ruby</p>
+                    </div>
+                </div>
+                <div class="ling">
+                    <div class="container-img">
+                        <img src="img/logo php.png" alt="">
+                    </div>
+                    <div class="nome5">
+                        <p>PHP</p>
+                    </div>
+                </div>
+                <div class="ling">
+                    <div class="container-img">
+                        <img src="img/logo python.jpg" alt="">
+                    </div>
+                    <div class="nome6">
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="parte7" id="parte7">
+        <div class="container-img">
+            <img src="img/card1.png" alt="">
+        </div>
+        <div class="container-conteudo">
+            <h1>FIM do Capítulo_1</h1>
+            <h2>Conclusão</h2>
+            <p>Com a conclusão deste capítulo, foram vistos conceitos básicos de informática, bem como o significado da mesma. Por fim, foram apresentados os primeiros conhecimentos do mundo Dev, mundo esse que será melhor desbravado nos próximos capítulos.</p>
+            <a href="home-professor.php">Sair</a>
+        </div>
+    </section>
+    <section class="copyright">
+        Copyright © 2021 Eduardo Garcia. Todos direitos reservados 
+    </section>
+</body>
+</html>

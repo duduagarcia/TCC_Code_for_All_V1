@@ -1,0 +1,181 @@
+/*FORMATAÇÃO PADRÃO DA TELA*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+/*ESTILO DA BARRA DE NAVEGAÇÃO*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    height: 70px;
+}
+
+.nome-site{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.links-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.links-nav a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.links-nav a:hover{
+    color: rgb(103,58,183);
+}
+
+/*ESTILO DA MAIN*/
+main{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+}
+
+/*TÍTULO*/
+.container-title{
+    width: 50%;
+    color: rgb(103,58,183);
+}
+
+h1{
+    font-size: 70px;
+}
+
+/*ESTILO DO CONTAINER DO FORM*/
+.container-form{
+    background-color: white;
+    width: 50%;
+    padding: 30px 0px 0px 20px; 
+}
+
+form{
+    display: flex;
+}
+
+/*ESTILO DA PARTE ESQUERDA DO FORMULÁRIO*/
+.textfields-container{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 23px;
+}
+
+/*ESTILO DOS INPUT:TEXT*/
+input{
+    background-color: rgb(40, 40, 40);
+    color: white;
+    width: 380px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+/*FORMATAÇÃO DO PLACEHOLDER DOS INPUT:TEXT*/
+::-webkit-input-placeholder  {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*ESTILO DOS BOTÕES*/
+.botao-submit , .botao-reset{
+    height: 60px;
+    padding: 12px 0px 12px 0px;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.botao-submit{
+    background-color: rgb(103,58,183);
+    border: none;
+}
+
+.botao-reset{
+    background-color: white;
+    color: black;
+}
+
+/*ANIMAÇÕES DOS BOTÕES*/
+.botao-submit:hover, .botao-reset:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+/*ESTILO DA PARTE DIREITA DO FORMULÁRIO*/
+.textarea-container{
+    padding-left: 30px;
+}
+
+textarea{
+    background-color: rgb(40, 40, 40);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    resize: none;
+}
+
+/*ESTILO DA PARTE DE COPYRIGHT*/
+.copyright{
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+}
+
+/*ESTILO DA WAVE*/
+.custom-shape-divider-bottom-1632265753 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-bottom: -140px;
+}
+
+.custom-shape-divider-bottom-1632265753 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 133px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1632265753 .shape-fill {
+    fill: #673AB7;
+}
+

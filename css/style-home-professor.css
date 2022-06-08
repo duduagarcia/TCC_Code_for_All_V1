@@ -1,0 +1,370 @@
+/*FORMATAÇÃO PADRÃO DA TELA*/
+*{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+/*ESTILO DA BARRA DE NAVEGAÇÃO*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    height: 90px;
+}
+
+.nome-site{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.links-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.links-nav a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.links-nav a:hover{
+    color: rgb(103,58,183);
+}
+
+.nomePHP{
+    background-color: rgb(30, 30, 30);
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nomePHP h1{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nomePHP h2{
+    margin-top: 20px;
+    color: white;
+}
+
+.nomePHP .container-titulo span{
+    color: rgb(103,58,183);
+    font-size: 50px;
+}
+
+.nomePHP .container-titulo{
+    width: 580px;
+    padding-top: 70px;
+}
+
+.container-titulo button{
+    width: 300px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 20px  0px 0px 0px;
+    padding: 5px;
+}
+
+.btn1{
+    background-color: rgb(103,58,183);
+    border: none;
+    transition: all 0.5s;
+}
+
+.btn1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.nomePHP .hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nomePHP .hello span{
+    color: white;
+    background-color: black;
+    font-size: 40px;
+    padding: 18px;
+    margin-top: -190px;
+}
+
+.mensagemPHP{
+    color: black;
+    background-color: white;
+    height: max-content;
+    width: 100%;
+}
+
+.mensagemPHP h2{
+    text-align: center;
+    font-size: 36px;
+    color: rgb(103,58,183);
+}
+
+.container-assunto{
+    text-align: center;
+    font-size: 30px;
+}
+
+.container-assunto input{
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+.container-assunto label{
+    color: black;
+}
+
+.dados-aluno{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.dados-aluno label{
+    position: relative;
+    left: -67px;
+}
+
+.dados-aluno input{
+    margin-right: -70px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+.container-mensagem{
+    text-align: center;
+    height: max-content;
+}
+
+.container-mensagem label{
+    font-size: 30px;
+    color: black;
+}
+
+/*FORMATAÇÃO DO PLACEHOLDER DOS INPUT:TEXT*/
+::-webkit-input-placeholder  {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.container-text-area{
+    text-align: center;
+    font-size: 30px;
+}
+
+.container-form{
+    align-items: center;
+}
+
+.inputText{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 380px;
+    height: 30px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: 2px solid rgb(103,58,183);
+}
+
+textarea{
+    background-color: rgb(60, 60, 60);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    resize: none;
+    border: 2px solid rgb(103,58,183);
+}
+
+.container-btns{
+    text-align: center;
+}
+
+.btn-submit{
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: none;
+    color: white;
+    background-color: rgb(103,58,183);
+}
+
+.btn-reset{
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.btn-reset:hover , .btn-submit:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+hr{
+    border-color: black;
+}
+
+/*ESTILO DA PARTE DOS CAPÍTULOS*/
+.capitulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color:rgb(30, 30, 30);
+}
+
+/*ESTILO DOS CARDS*/
+.card{
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
+    border: solid 1px black;
+}
+
+.card-img{
+    height: 170px;
+    margin-bottom: 15px;   
+}
+
+.img-card-1 , .img-card-2, .img-card-3, .img-card-4{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+    background-color: green;
+}
+
+.card h2{
+    padding: 10px;
+    font-size: 30px;
+}
+
+.card p{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.a-1{
+    background-color: green;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.a-2{
+    background-color: rgb(255, 184, 67);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.a-3{
+    background-color: rgb(49, 118, 195);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.a-4{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+/*ESTILO DO FOOTER*/
+.copyright{
+    margin: 0px 0px 0px 0px;
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+}
+
+.custom-shape-divider-bottom-1635601720 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -93px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1635601720 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 248px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1635601720 .shape-fill {
+    fill: #673AB7;
+}
